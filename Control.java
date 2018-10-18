@@ -14,7 +14,7 @@ public class Contral {
 		Car car=new Car();
 		HighWay highway=new HighWay();
 		
-		System.out.println("ÇëÊäÈë³ö·¢µã£¬Ä¿µÄµØ£¬¾àÀë£º¸ñÊ½ÎªYY YY YY");
+		System.out.println("è¯·è¾“å…¥å‡ºå‘ç‚¹ï¼Œç›®çš„åœ°ï¼Œè·ç¦»ï¼šæ ¼å¼ä¸ºYY YY YY");
 		Plane plane=new Plane();
 		Scanner sc=new Scanner(System.in);
 		try {
@@ -24,29 +24,29 @@ public class Contral {
 		double t1=car.result(d);
 		double t2=highway.result(d);
 		double t3=plane.result(d);
-		System.out.println("´Ó"+s[0]+"µ½"+s[1]+"ËùĞèµÄÊ±¼äÎª£º"+"\n"+car.getName()+" "+String.format("%.2f",t1)+"Ğ¡Ê±");
-		System.out.println(highway.getName()+" "+String.format("%.2f",t2)+"Ğ¡Ê±"+"\n"+plane.getName()+" "+String.format("%.2f",t3)+"Ğ¡Ê±");
+		System.out.println("ä»"+s[0]+"åˆ°"+s[1]+"æ‰€éœ€çš„æ—¶é—´ä¸ºï¼š"+"\n"+car.getName()+" "+String.format("%.2f",t1)+"å°æ—¶");
+		System.out.println(highway.getName()+" "+String.format("%.2f",t2)+"å°æ—¶"+"\n"+plane.getName()+" "+String.format("%.2f",t3)+"å°æ—¶");
 		double m=min(t1,t2,t3);
 		if(m==t1)
-			System.out.println("×øÆû³µ×î¿ì");
+			System.out.println("åæ±½è½¦æœ€å¿«");
 		else if(m==t2)
-			System.out.println("×ø¸ßÌú×î¿ì");
+			System.out.println("åé«˜é“æœ€å¿«");
 		else
-			System.out.println("×ø·É»ú×î¿ì");
+			System.out.println("åé£æœºæœ€å¿«");
 		}catch(ArrayIndexOutOfBoundsException e)
 		{
 			e.printStackTrace();
-			System.out.println("Çë½«ÊäÈëµÄÄÚÈİÓÃÁ½¸ö¿Õ¸ñ¸ô¿ª£¡"+e.getMessage());
+			System.out.println("è¯·å°†è¾“å…¥çš„å†…å®¹ç”¨ä¸¤ä¸ªç©ºæ ¼éš”å¼€ï¼"+e.getMessage());
 		}
 		catch(NumberFormatException e)
 		{
 			e.printStackTrace();
-			System.out.println("ÇëÊıÈëÕıÈ·µÄÊı×Ö£¡");
+			System.out.println("è¯·æ•°å…¥æ­£ç¡®çš„æ•°å­—ï¼");
 		}
 		catch(Exception e) 
 		{
 			e.printStackTrace();
-			System.out.println("ÇëÖØĞÂÊäÈë£¡");
+			System.out.println("è¯·é‡æ–°è¾“å…¥ï¼");
 		}
 
 	}
